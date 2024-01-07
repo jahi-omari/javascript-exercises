@@ -7,7 +7,7 @@ const removeFromArray = function(array, ...restArgs) {
         // Assign current restArgs index to variable
         restArgsIndex = restArgs[j];
 
-        // Inner loop compares restArgsIndex to "array" array and splices out any values that match
+        // Inner loop compares restArgsIndex value to "array" array and splices out any values that match
         for(let i = 0; i < array.length; i++){
             if(array[i] === restArgsIndex){
                 array.splice(i, 1);
